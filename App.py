@@ -4,7 +4,7 @@ from os import system
 from argparse import ArgumentParser
 from json import dump
 parser = ArgumentParser()
-parser.add_argument("username",nargs='*',help='- pass the username , example:  $aliens_eye aaron123')
+parser.add_argument("email",nargs='*',help='- pass the email , example:  $aliens_eye test@gmail.com')
 args = parser.parse_args()
 r = "\033[31m"
 g = "\033[32m"
@@ -142,10 +142,10 @@ def main(usernames):
  print(f"{r}NOTE:The data may not be completely accurate!\n")
  print(f"{r}NOTE: for educational purpose only!\n")
  if usernames == []:
-  usernames=input(f"{y}Enter the username{r}:{g}").split()
- for username in usernames:
-    scanner(username)
+  usernames=input(f"{y}Enter the email{r}:{g}").split()
+ for username in email:
+    scanner(email)
  print(f"\n{r}vist {g}https://en.wikipedia.org/wiki/List_of_HTTP_status_codes{r} to know more about status codes!\n")
  print(f"{b}Thank you\n")
 if __name__ == "__main__":
- main(args.username)
+ main(args.email)
