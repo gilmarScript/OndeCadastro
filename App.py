@@ -136,14 +136,14 @@ def scanner(u):
    dump(save_json,f,indent=4)
  print("#"*126)
  print(f"\n{y}Data has been saved in {u}.json")
-def main(usernames):
+def main(email):
  system("clear")
  print(banner)
  print(f"{r}NOTE:The data may not be completely accurate!\n")
  print(f"{r}NOTE: for educational purpose only!\n")
- if usernames == []:
+ if email == []:
   usernames=input(f"{y}Enter the email{r}:{g}").split()
- for username in email:
+ for email in email:
     scanner(email)
  print(f"\n{r}vist {g}https://en.wikipedia.org/wiki/List_of_HTTP_status_codes{r} to know more about status codes!\n")
  print(f"{b}Thank you\n")
