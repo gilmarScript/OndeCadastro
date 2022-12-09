@@ -142,7 +142,7 @@ def main(email):
  print(f"{r}NOTE:The data may not be completely accurate!\n")
  print(f"{r}NOTE: for educational purpose only!\n")
  if email == []:
-  usernames=input(f"{y}Enter the email{r}:{g}").split()
+  e-mail=input(f"{y}Enter the email{r}:{g}").split()
  for email in email:
     scanner(email)
  print(f"\n{r}vist {g}https://en.wikipedia.org/wiki/List_of_HTTP_status_codes{r} to know more about status codes!\n")
