@@ -118,24 +118,24 @@ def scanner(u):
    continue
   print(f"{g}#"+f"{p}-"*124+f"{g}#")
   if code==200:
-   user1="Found"
-   user=f"{g}|{y}        Found        "
+   email1="Found"
+   email=f"{g}|{y}        Found        "
   elif code==404:
-   user1="Not Found"
+   email1="Not Found"
    user=f"{g}|{r}      Not Found      "
   else:
-   user1="undefined status code"
+   email1="undefined status code"
    user=f"{g}|{b}undefined status code"
    j="none"
-  save_json[i]={"code:":code,"user:":user1,"url:":j}
+  save_json[i]={"code:":code,"email:":email1,"url:":j}
   media=f"{g}# {y}"+i+" "*(15-len(i))
   code=f"{g}|     {y}"+str(code)+" "*5
   url=f"{g}|{y} "+j+" "*(70-len(j))+f"{g}#"
-  print(media+user+code+url)
+  print(media+email+code+url)
   with open(u+".json","w") as f:
    dump(save_json,f,indent=4)
  print("#"*126)
- print(f"\n{y}Data has been saved in {u}.json")
+ print(f"\n{y}Os dados foram salvos em {u}.json")
 def main(email):
  system("clear")
  print(banner)
