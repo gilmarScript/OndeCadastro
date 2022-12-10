@@ -12,18 +12,15 @@ y = "\033[33m"
 b='\33[36m'
 p = "\033[35m"
 banner=f"""{y}
-   ___   __   _________  ___  ____
-  / _ | / /  /  _/ __/ |/ ( )/ __/
- / __ |/ /___/ // _//    /|/_\ \  
-/_/ |_/____/___/___/_/|_/  /___/  
-{r}
-   ______  ______
-  / __/\ \/ / __/                 
- / _/   \  / _/                   
-/___/   /_/___/                   
-      
-{g}by {y}arxhr007
-{g}insta:{r}@_arxhr007_
+ _______             _ _  
+(_______)           (_) | 
+ _____   ____  _____ _| | 
+|  ___) |    \(____ | | | 
+| |_____| | | / ___ | | | 
+|_______)_|_|_\_____|_|\_)
+                                
+{g}by {y}Gilmar Filho
+{g}insta:{r}@GilmarFilho
 """
 def scanner(u):
  save_json={}
@@ -103,7 +100,7 @@ def scanner(u):
  print(f"\n{y}Fetching details of {u}:\n")
  spece=" "*20
  print(f"{g}#"*126)
- print(f"{g}# {r}SOCIAL MEDIA   {g}|        {r}USER {g}        | {r}STATUS CODE{g} | {r}                   URL   {g}      {spece}                   #")
+ print(f"{g}# {r}SOCIAL MEDIA   {g}|        {r}email {g}        | {r}STATUS CODE{g} | {r}                   URL   {g}      {spece}                   #")
  for i,j in social.items():
   try:
    req = get(j)
