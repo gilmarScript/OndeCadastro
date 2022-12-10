@@ -4,7 +4,7 @@ from os import system
 from argparse import ArgumentParser
 from json import dump
 parser = ArgumentParser()
-parser.add_argument("email",nargs='*',help='- pass the email , example:  $aliens_eye test@gmail.com')
+parser.add_argument("E-mail",nargs='*',help='- pass the E-mail , example:  $aliens_eye test@gmail.com')
 args = parser.parse_args()
 r = "\033[31m"
 g = "\033[32m"
@@ -26,7 +26,8 @@ def scanner(u):
  save_json={}
  social={
  "facebook":f"https://facebook.com/{u}",
- "youtube":f"https://youtube.com/{u}",
+  "coinbase:f:"https://login.coinbase.com/{u}"
+  "youtube":f"https://youtube.com/{u}",
  "instagram":f"https://instagram.com/{u}",
  "vimeo":f"https://vimeo.com/{u}",
  "github":f"https://github.com/{u}",
@@ -115,34 +116,34 @@ def scanner(u):
    continue
   print(f"{g}#"+f"{p}-"*124+f"{g}#")
   if code==200:
-   email1="Found"
-   email=f"{g}|{y}        Found        "
+   E-mail1="Found"
+   E-mail=f"{g}|{y}        Found        "
   elif code==404:
-   email1="Not Found"
-   user=f"{g}|{r}      Not Found      "
+   E-mail1="Not Found"
+   E-mail=f"{g}|{r}      Not Found      "
   else:
-   email1="undefined status code"
-   user=f"{g}|{b}undefined status code"
+   E-mail1="undefined status code"
+   E-mail1=f"{g}|{b}undefined status code"
    j="none"
-  save_json[i]={"code:":code,"email:":email1,"url:":j}
+  save_json[i]={"code:":code,"E-mail:":email1,"url:":j}
   media=f"{g}# {y}"+i+" "*(15-len(i))
   code=f"{g}|     {y}"+str(code)+" "*5
   url=f"{g}|{y} "+j+" "*(70-len(j))+f"{g}#"
-  print(media+email+code+url)
+  print(media+E-mail+code+url)
   with open(u+".json","w") as f:
    dump(save_json,f,indent=4)
  print("#"*126)
  print(f"\n{y}Os dados foram salvos em {u}.json")
-def main(email):
+def main(E-mail):
  system("clear")
  print(banner)
  print(f"{r}NOTE:The data may not be completely accurate!\n")
  print(f"{r}NOTE: for educational purpose only!\n")
  if email == []:
-  email=input(f"{y}Enter the email{r}:{g}").split()
- for email in email:
-    scanner(email)
+  email=input(f"{y}Enter the E-mail{r}:{g}").split()
+ for E-mail in E-mail:
+    scanner(E-mail)
  print(f"\n{r}vist {g}https://en.wikipedia.org/wiki/List_of_HTTP_status_codes{r} to know more about status codes!\n")
  print(f"{b}Thank you\n")
 if __name__ == "__main__":
- main(args.email)
+ main(args.E-mail)
