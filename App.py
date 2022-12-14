@@ -26,7 +26,6 @@ def scanner(u):
  save_json={}
  social={
  "facebook":f"https://facebook.com/{u}",
-  "coinbase:f:"https://login.coinbase.com/{u}"
   "youtube":f"https://youtube.com/{u}",
  "instagram":f"https://instagram.com/{u}",
  "vimeo":f"https://vimeo.com/{u}",
