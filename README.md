@@ -14,7 +14,7 @@ cd OndeCadastro
 python3 localizar.py jovemsigilosodobembr
 ```
 
-*** Tenha Paciencia***
+***Tenha Paciencia***
 
 Se gostou deixe sua doação, para melhoria de novos projeto..
 
