@@ -4,22 +4,19 @@
 
 
 ```
-git clone https://github.com/jovemsigilosodobembr/OndeCadastro
+git clone https://github.com/gilmarscript/OndeCadastro
 cd OndeCadastro
 ```
 
 ***Como Usar***
 
 ```
-python3 localizar.py jovemsigilosodobembr
+python3 localizar.py gilmarscript
 ```
 
 ***Tenha Paciencia***
 
 Se gostou deixe sua doação, para melhoria de novos projeto..
 
-Btc: 
+***Btc:*** ````1Fi2Du2HuF8bHFqmwRq3yYG17GHNa3wkWu````
 
-```
-Carteira estara aqui embreve
-```
